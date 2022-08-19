@@ -1,0 +1,119 @@
+.destaque-bg {
+  background: var(--c1);
+}
+
+.destaque-container {
+  margin: 0 auto;
+  padding: 40px 12%;
+  max-width: 1400px;
+}
+
+.destaque-mais {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destaque-mais h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.63rem;
+  line-height: 1.81rem;
+  color: var(--p1);
+  position: relative;
+  width: max-content;
+  position: relative;
+}
+
+.destaque-mais h3::before {
+  content: "";
+  width: 30%;
+  height: 4px;
+  background: var(--p2);
+  position: absolute;
+  margin-top: 30px;
+}
+
+.destaque-mais a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: var(--t2);
+  text-decoration: none;
+  padding: 4px 8px;
+  display: inline-block;
+  border: 1px solid var(--t2);
+}
+
+.destaque-mais a:hover {
+  border: 1px solid var(--p1);
+  color: var(--p1);
+}
+
+.destaques-gatos {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.destaque-img {
+  width: 260px;
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.destaque-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gato-nome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid var(--t1);
+  margin-top: 8px;
+}
+
+.destaques-gatos h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 1.38rem;
+  color: var(--t1);
+}
+
+.gato-nome a {
+  text-decoration: none;
+  color: var(--p1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .destaque-mais h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .destaques-gatos {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .destaque-img {
+    width: 240px;
+    height: 180px;
+    margin-bottom: 18px;
+  }
+  .destaque-mais h3 {
+    font-size: 1.25rem;
+    line-height: 1.38rem;
+  }
+}

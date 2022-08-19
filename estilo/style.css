@@ -1,0 +1,26 @@
+/* Reset */
+@import "./reset.css";
+
+/* Cores */
+@import "./cores.css";
+
+/* Roboto: 300 e 400 -- Poppins: 400, 500 e 600 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@300;400&display=swap");
+
+/* Header */
+@import "./header.css";
+
+/* Introdução */
+@import "./intro.css";
+
+/* Destaques */
+@import "./destaques.css";
+
+/* Cards */
+@import "./cards.css";
+
+/* Inscre-se */
+@import "./inscreva.css";
+
+/* Inscre-se */
+@import "./footer.css";

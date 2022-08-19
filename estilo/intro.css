@@ -1,0 +1,121 @@
+.main-bg {
+  background: var(--c1);
+}
+
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16%;
+}
+
+.intro-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 0px;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-conteudo h1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--t1);
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+}
+
+.intro-conteudo span {
+  color: var(--p2);
+}
+
+.intro-conteudo p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.13rem;
+  line-height: 1.69rem;
+  color: var(--t2);
+}
+
+.origem-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  background: var(--c2);
+}
+
+.img-origem img {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+
+.txt-origem h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.63rem;
+  line-height: 1.88rem;
+  color: var(--t1);
+}
+
+.txt-origem p {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.13rem;
+  line-height: 1.88rem;
+  max-width: 64ch;
+  color: var(--t2);
+  margin-right: 4%;
+}
+
+.txt-origem a {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.63rem;
+  color: var(--t2);
+  text-decoration: none;
+  padding: 4px 8px;
+  display: inline-block;
+  border: 1px solid var(--t2);
+}
+
+@media (max-width: 800px) {
+  .intro-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .intro-conteudo h1 {
+    font-size: 1.88rem;
+    line-height: 2.06rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .intro-conteudo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .origem-container {
+    grid-template-columns: 1fr;
+  }
+  .txt-origem {
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .txt-origem h2 {
+    text-align: center;
+  }
+  .txt-origem p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 200ch;
+  }
+  .txt-origem a {
+    margin: 10px auto;
+  }
+}

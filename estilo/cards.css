@@ -1,0 +1,65 @@
+.card-bg {
+  background: linear-gradient(90deg, var(--c2) 50%, var(--c1) 50%);
+}
+.card-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 16%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.63rem;
+  line-height: 1.88rem;
+  color: var(--t1);
+  position: relative;
+}
+
+.card p {
+  margin-top: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--t2);
+}
+
+.card a {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.63rem;
+  color: var(--t2);
+  text-decoration: none;
+  padding: 4px 8px;
+  display: inline-block;
+  border: 1px solid var(--t2);
+}
+
+.card a:hover {
+  border: 1px solid var(--p1);
+  color: var(--p1);
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    background: linear-gradient(180deg, var(--c2) 50%, var(--c1) 50%);
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+  .card p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
